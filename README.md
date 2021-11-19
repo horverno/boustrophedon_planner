@@ -15,6 +15,16 @@ and returns a `StripingPlan` message which contains a list of waypoints to strip
   - "Half - Y" turns are supported, allowing for some curvature at the start / end of paths to assist robots that are not      completely holonomic.
   - Many new launch file parameters allow the user to specify more precisely the behavior that they want the plan to have
 
+## Install
+Ubuntu 18.04, Melodic:
+``` r
+sudo apt-get install libcgal-dev
+git clone https://github.com/PickNikRobotics/rosparam_shortcuts
+git clone https://github.com/Greenzie/boustrophedon_planner/
+catkin build rosparam_shortcuts
+catkin build boustrophedon_server boustrophedon_msgs
+```
+
 ## License
 
 This repository is subject to GNU General Public License version 3 or later due to its dependencies.
